@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-400 flex flex-col items-center min-h-screen py-8">
+
+    <h1 class="text-4xl font-extrabold text-yellow-900 text-center mb-8">
+        Aplikasi Buku Favorit
+    </h1>
+
+    <!-- Input Nama Pengguna -->
+    <div id="session-container" class="bg-white p-6 rounded-lg shadow-lg w-80 mb-8">
+        <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" 
+               class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button id="btnSimpanNama" 
+                class="w-full py-2 px-4 bg-amber-700 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors">
+            Simpan Nama
+        </button>
+        <h3 id="salamPengguna" class="mt-4 text-lg font-medium text-gray-700"></h3>
+    </div>
+
+    <!-- Form Tambah Buku -->
+    <form id="form-tambah-buku" class="bg-white p-6 rounded-lg shadow-lg w-80 mb-8">
+        <input type="text" id="judul" placeholder="Judul Buku" required 
+               class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="text" id="penulis" placeholder="Penulis" required 
+               class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="number" id="tahun" placeholder="Tahun Terbit" required 
+               class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit" 
+                class="w-full py-2 px-4 bg-amber-700 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors">
+            Tambah Buku
+        </button>
+    </form>
+
+    <!-- Daftar Buku -->
+    <h2 class="text-2xl font-semibold text-yellow-900 mb-4">Daftar Buku</h2>
+    <div id="daftar-buku" class="bg-white p-6 rounded-lg shadow-lg w-80 mb-8"></div>
+
+    <!-- Buku Favorit -->
+    <h2 class="text-2xl font-semibold text-yellow-900 mb-4">Buku Favorit</h2>
+    <div id="buku-favorit" class="bg-white p-6 rounded-lg shadow-lg w-80"></div>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+<footer class=" w-full text-white py-4 mt-4">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">Dibuat & Dimodifikasi Oleh Handra Putra © 2024 Aplikasi Buku Favorit.</p>
+    </div>
+</footer>
+
+</body>
+</html>
